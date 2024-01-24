@@ -26,5 +26,7 @@ npm -v
 
 First, run the development server:
 
+```bash
 1. npm install
 2. npm dev
+```
