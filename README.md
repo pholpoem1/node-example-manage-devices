@@ -22,3 +22,9 @@ To verify the installation, open a terminal and run the following commands:
 ```bash
 node -v
 npm -v
+```
+
+First, run the development server:
+
+1. npm install
+2. npm dev
