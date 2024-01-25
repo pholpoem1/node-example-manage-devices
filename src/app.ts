@@ -5,8 +5,6 @@ import cors from "cors";
 import indexRouter from "./routes/index";
 import registerRouter from "./routes/register";
 import loginRouter from "./routes/login";
-import updateTableRouter from "./routes/update-table";
-import logsRouter from "./routes/logs";
 import deviceRouter from "./routes/device";
 
 const app: Express = express();
@@ -19,8 +17,6 @@ app.use(bodyParser.json());
 app.use("/", indexRouter);
 app.use("/register", registerRouter);
 app.use("/login", loginRouter);
-app.use("/update-table", updateTableRouter);
-app.use("/get-logs", logsRouter);
 app.use("/", deviceRouter);
 
 app.listen(port, () => console.log(`Application is running on port ${port}`));
